@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="countdown.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Countdown Manager app</h1>
+    <h2 id="mainTitle"></h2>
+    <div class="flip-container">
+      <div class="time" id="days"><span>00</span><label>Days</label></div>
+      <div class="time" id="hours"><span>00</span><label>Hours</label></div>
+      <div class="time" id="minutes"><span>00</span><label>Minutes</label></div>
+      <div class="time" id="seconds"><span>00</span><label>Seconds</label></div>
+    </div>
+    <form id="countdownForm">
+      <input type="text" id="titleInput" placeholder="Event Title" required />
+      <input type="date" id="dateInput" required />
+      <button type="submit">➕</button>
+    </form>
+    <ul id="countdownList"></ul>
+  </div>
+  <script src="countdown.js"></script>
+</body>
+</html>
